@@ -1,9 +1,5 @@
 # RAG LLAMA INDEX 🦙
 
-<p align="center">
-    <img src="https://www.peru.travel/contenido/general/imagen/en/430/1.1/portada%20llamas,%20alpacas%20y%20vicu%C3%B1as.jpg" width="500" height="400"/>
-</p>
-
 This repository hosts a full Q&A pipeline using llama index framework and vector database. The data used are Financed Emission related documents that have been extracted from different sorces. For the following pipeline all documents were used.
 
 The main steps taken to build the RAG pipeline can be summarize as follows (a basic RAG Pipeline is performed after text cleaning):
@@ -19,8 +15,6 @@ The main steps taken to build the RAG pipeline can be summarize as follows (a ba
 - **Reranking**: re-order nodes, and returns the top N nodes
 
 - **Scoring**: top k most similar results
-
-Feel free to and clone this repo
 
 ## 👨‍💻 **Tech Stack**
 
@@ -77,10 +71,6 @@ The vector store used to store all embeddings and metadata is **Deeplake**. It i
 --------------
 
 Once the pipeline is set up, the query can be done. To the question `What is this document talking about?` the following output with the **score** and the top N node from where the information was retrieved.
-
-<p align="center">
-<img width="563" alt="Screen Shot 2024-01-05 at 9 05 56 AM" src="https://images.upgrad.com/e709ab65-0e76-40f5-9c30-86ac042c598c-RAG%20-%20System%20Design%202.png">
-</p>
 
 The **score** represents the relevance or similarity measure between the query and the retrieved document. This score indicates the likelihood or degree to which the document is considered relevant to the query based on the model's understanding or learned representation of the text.
 
